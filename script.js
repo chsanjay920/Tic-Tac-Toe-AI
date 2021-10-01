@@ -52,9 +52,9 @@ function verifywin() {
         (userSelector[0][1] == "O" && userSelector[1][1] == "O" && userSelector[2][1] == "O") ||
         (userSelector[0][2] == "O" && userSelector[1][2] == "O" && userSelector[2][2] == "O")
     )) {
-        console.log("user winns");
+        console.log("user winns WON THE GAME");
         // alert("you won");
-        winner("YOU");
+        winner("YOU WON THE GAME");
     }
     else if (diganols == 3 || revdiganols == 3 || (
         (userSelector[0][0] == "X" && userSelector[0][1] == "X" && userSelector[0][2] == "X") ||
@@ -66,14 +66,17 @@ function verifywin() {
     )) {
         console.log("machine winns");
         // alert("machine won");
-        winner("MACHINE");
+        winner("MACHINE WON THE GAME");
+    }
+    else{
+        winner("DRAW MATCH");
     }
 }
 
 function winner(name) {
     var modal = document.getElementById("popup");
     var span = document.getElementsByClassName("close")[0];
-    document.getElementById('Winner').innerHTML = name+" WON THE GAME";
+    document.getElementById('Winner').innerHTML = name;
     modal.style.display = "block";
     span.onclick = function () {
         modal.style.display = "none";
