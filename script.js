@@ -13,12 +13,12 @@ function popElement(n) {
 function RandomSelector() {
     var sel = filled[Math.floor(Math.random() * filled.length)];
     popElement(sel);
-    document.getElementById(sel).src = "./images/o.png";
+    document.getElementById(sel).src = "https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/circle.png";
     userSelector[sel[0]][sel[1]] = "X";
 }
 
 function func(row, col, id) {
-    document.getElementById(id).src = "./images/x.jpg";
+    document.getElementById(id).src = "https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/machine%20(1).png";
     userSelector[id[0]][id[1]] = "O";
     popElement(id);
     RandomSelector();
