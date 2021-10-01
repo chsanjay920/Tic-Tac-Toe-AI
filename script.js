@@ -68,9 +68,6 @@ function verifywin() {
         // alert("machine won");
         winner("MACHINE WON THE GAME");
     }
-    else{
-        winner("DRAW MATCH");
-    }
 }
 
 function winner(name) {
