@@ -11,7 +11,11 @@
 <body>
     <div class="background-container">
     </div>
+    <div class="header">
+        Tic-Tak-Toe
+    </div>
     <div class="inside-container ">
+        <!-- <p>tic-tak-toe</p> -->
             <img id="00"  onclick="func(0,0,this.id)" src="./images/blank.png" alt="">
             <img id="01"  onclick="func(0,1,this.id)" src="./images/blank.png" alt="">
             <img id="02"  onclick="func(0,2,this.id)" src="./images/blank.png" alt="">
@@ -25,5 +29,11 @@
             <img id="22"  onclick="func(2,2,this.id)" src="./images/blank.png" alt="">
         <br>
     </div>
+    <div id="popup" class="popup">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="Winner"></p>
+        </div>
+      </div>
 </body>
 </html>
