@@ -8,7 +8,7 @@ https://tic-tac-toe-by-sanjay.vercel.app/
 
 ## Screen shot:
 
-<!-- ![screenshot](./images/Screenshop.png) -->
+<!-- ![screenshot](https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/Screenshop.png) -->
 <a href="https://tic-tac-toe-by-sanjay.vercel.app/">
 <p align="center">
   <img src="./images/Screenshot.png" alt="screenshot" width="500px" >
