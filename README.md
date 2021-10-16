@@ -8,10 +8,10 @@ https://tic-tac-toe-by-sanjay.vercel.app/
 
 ## Screen shot:
 
-<!-- ![screenshot](https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/Screenshop.png) -->
+<!-- ![screenshot](https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/Screenshop.png?raw=true) -->
 <a href="https://tic-tac-toe-by-sanjay.vercel.app/">
 <p align="center">
-  <img src="./images/Screenshot.png" alt="screenshot" width="500px" >
+  <img src="https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/Screenshop.png" alt="screenshot" width="500px" >
 </p>
 </a>
 
