@@ -172,28 +172,28 @@ function popElement(n) {
 function verfiwinner() {
 	//verify rows
 	if (board[0][0] == board[0][1] && board[0][1] == board[0][2] && (board[0][0] === "x" || board[0][0] === "o")) {
-		poppingwinner(board[0][0] + " won the match");
+		poppingwinner(board[0][0]);
 	}
 	else if (board[1][0] == board[1][1] && board[1][1] == board[1][2] && (board[1][0] === "x" || board[1][0] === "o")) {
-		poppingwinner(board[1][0] + " won the match");
+		poppingwinner(board[1][0]);
 	}
 	else if (board[2][0] == board[2][1] && board[2][1] == board[2][2] && (board[2][0] === "x" || board[2][0] === "o")) {
-		poppingwinner(board[2][0] + " won the match");
+		poppingwinner(board[2][0]);
 	}
 	else if (board[0][0] == board[1][0] && board[1][0] == board[2][0] && (board[0][0] === "x" || board[0][0] === "o")) {
-		poppingwinner(board[0][0] + " won the match");
+		poppingwinner(board[0][0]);
 	}
 	else if (board[0][1] == board[1][1] && board[1][1] == board[2][1] && (board[0][1] === "x" || board[0][1] === "o")) {
-		poppingwinner(board[0][1] + " won the match");
+		poppingwinner(board[0][1]);
 	}
 	else if (board[0][2] == board[1][2] && board[1][2] == board[2][2] && (board[0][2] === "x" || board[0][2] === "o")) {
-		poppingwinner(board[0][2] + " won the match");
+		poppingwinner(board[0][2]);
 	}
 	else if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && (board[0][0] === "x" || board[0][0] === "o")) {
-		poppingwinner(board[0][0] + " won the match");
+		poppingwinner(board[0][0]);
 	}
 	else if (board[2][0] == board[1][1] && board[1][1] == board[0][2] && (board[2][0] === "x" || board[2][0] === "o")) {
-		poppingwinner(board[2][0] + " won the match");
+		poppingwinner(board[2][0]);
 	}
 	else if (!isMovesLeft(board)) {
 		poppingwinner("draw match");
@@ -204,9 +204,18 @@ function verfiwinner() {
 }
 
 function poppingwinner(name) {
+	if(name ==="x"){
+		var win = "machine won the match";
+	}
+	else if(name === "o"){
+		var win = "you won the match";
+	}
+	else{
+		var win = name;
+	}
 	var modal = document.getElementById("popup");
 	var span = document.getElementsByClassName("close")[0];
-	document.getElementById('Winner').innerHTML = name;
+	document.getElementById('Winner').innerHTML = win;
 	modal.style.display = "block";
 	span.onclick = function () {
 		modal.style.display = "none";
