@@ -139,8 +139,11 @@ function getKeyByValue(object, value) {
 	return Object.keys(object).find(key => object[key] === value);
 }
 
-function getindex(index) {
+function getindex(index,link) {
 	document.getElementById(index).src = "https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/machine%20(1).png";
+	link.onclick = function(event) {
+        event.preventDefault();
+    }
 	popElement(index);
 	board[dic[index][0]][dic[index][1]] = "o";
 
