@@ -3,6 +3,9 @@ class Move {
 		let row, col;
 	}
 }
+window.onload = function(){
+ai();
+}
 
 let player = 'x', opponent = 'o';
 function isMovesLeft(board) {
