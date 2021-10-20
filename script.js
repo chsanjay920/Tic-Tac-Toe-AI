@@ -202,7 +202,7 @@ function verfiwinner() {
 		poppingwinner(board[2][0]);
 	}
 	else if (!isMovesLeft(board)) {
-		poppingwinner("draw match");
+		poppingwinner("DRAW MATCH");
 	}
 	else {
 		return false;
@@ -211,10 +211,10 @@ function verfiwinner() {
 
 function poppingwinner(name) {
 	if(name ==="x"){
-		var win = "machine won the match";
+		var win = "MACHINE WON THE MATCH";
 	}
 	else if(name === "o"){
-		var win = "you won the match";
+		var win = "YOU WON THE MATCH";
 	}
 	else{
 		var win = name;

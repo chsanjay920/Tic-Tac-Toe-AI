@@ -50,7 +50,7 @@ img {
 
 
 .popup {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -65,16 +65,19 @@ img {
   
   /* Modal Content */
   .modal-content {
-    background-color: #f49dff;
+    background-color: #f9cbff;
     margin: auto;
     padding: 20px;
-    border: 15px solid rgb(247, 195, 26);
+    border: 15px solid rgb(247, 26, 26);
     width: 50%;
+    height: 50%;
   }
   .modal-content p{
-    font-size: 30px;
-    font-family: 'Permanent Marker', cursive;
-    color: rgb(68, 59, 59);
+    font-size: 50px;
+    text-align: center;
+    font-size: 420%;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #ff0000;
   }
   /* The Close Button */
   .close {
