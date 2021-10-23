@@ -9,6 +9,9 @@ function RandomSelector() {
     document.getElementById(sel).src = "https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/circle.png";
     userSelector[sel[0]][sel[1]] = "X";
 }
+window.onload = function(){
+RandomSelector();
+}
 
 let player = 'x', opponent = 'o';
 function isMovesLeft(board) {
