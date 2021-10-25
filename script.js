@@ -3,14 +3,9 @@ class Move {
 		let row, col;
 	}
 }
-function RandomSelector() {
-    var sel = filled[Math.floor(Math.random() * filled.length)];
-    popElement(sel);
-    document.getElementById(sel).src = "https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/circle.png";
-    userSelector[sel[0]][sel[1]] = "X";
-}
+
 window.onload = function(){
-RandomSelector();
+ai();
 }
 
 let player = 'x', opponent = 'o';
