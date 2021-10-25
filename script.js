@@ -5,7 +5,7 @@ class Move {
 }
 
 window.onload = function(){
-ai();
+//ai();
 }
 
 let player = 'x', opponent = 'o';
