@@ -73,9 +73,8 @@ img {
     height: 10%;
   }
   .modal-content p{
-    font-size: 20px;
+    font-size: larger;
     text-align: center;
-    font-size: 420%;
     color: rgb(0, 0, 0);
     text-shadow: 0 0 3px #ff0000, 0 0 5px #ff0000;
   }
