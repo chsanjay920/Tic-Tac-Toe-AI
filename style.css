@@ -69,11 +69,11 @@ img {
     margin: auto;
     padding: 20px;
     border: 15px solid rgb(247, 26, 26);
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 10%;
   }
   .modal-content p{
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
     font-size: 420%;
     color: rgb(0, 0, 0);
