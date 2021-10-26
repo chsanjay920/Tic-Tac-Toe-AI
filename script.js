@@ -165,7 +165,9 @@ function ai() {
 	board[bestMove.row][bestMove.col] = "x";
 	var n = getKeyByValue(dic, bestMove.row + "" + bestMove.col);
 	document.getElementById(n).src = "https://raw.githubusercontent.com/chsanjay920/Tic-Tac-Toe-AI/main/images/circle.png";
-
+	document.getElementById(n).this.onclick = function(event) {
+        event.preventDefault();
+    }
 	console.log("The Optimal Move is :<br>");
 	console.log("ROW: " + bestMove.row +
 		" COL: " + bestMove.col + "<br>");
