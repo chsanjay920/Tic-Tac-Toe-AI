@@ -156,14 +156,11 @@ function getindex(index,link) {
 		location.reload();
 	}
 	console.log(board);
-	ai();
+	ai(link);
 	verfiwinner();
 }
 
 function ai() {
-	link.onclick = function(event) {
-        event.preventDefault();
-    }
 	let bestMove = findBestMove(board);
 	board[bestMove.row][bestMove.col] = "x";
 	var n = getKeyByValue(dic, bestMove.row + "" + bestMove.col);
