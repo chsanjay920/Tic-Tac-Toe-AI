@@ -161,7 +161,7 @@ function getindex(index,link) {
 }
 
 function ai() {
-	event.preventDefault();
+	onClick="this.disabled = true;"
 	let bestMove = findBestMove(board);
 	board[bestMove.row][bestMove.col] = "x";
 	var n = getKeyByValue(dic, bestMove.row + "" + bestMove.col);
